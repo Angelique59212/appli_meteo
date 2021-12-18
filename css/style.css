@@ -13,7 +13,7 @@ html {
     display: flex;
     flex-direction: column;
     background-color: lightblue;
-    background-image: url("/img/back.png");
+    background-image: url("../img/back.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

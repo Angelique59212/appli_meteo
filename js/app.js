@@ -36,15 +36,19 @@ valid.addEventListener("click", () => {
         switch (response.weather[0].description) {
             case "ciel dégagé" :
                 image.style.backgroundImage = "url('../img/cielDegage.png')";
+                image.style.backgroundSize = "contain";
                 break;
             case "couvert" :
                 image.style.backgroundImage = "url('../img/couvert.png')";
+                image.style.backgroundSize = "contain";
                 break;
             case "légères chutes de neige" :
                 image.style.backgroundImage = "url('../img/chutesDeNeige.png')";
+                image.style.backgroundSize = "contain";
                 break;
             case "légère pluie" :
                 image.style.backgroundImage = "url('../img/légèrePluie.png')";
+                image.style.backgroundSize = "contain";
                 break;
 
         }
