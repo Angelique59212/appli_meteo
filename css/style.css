@@ -9,10 +9,8 @@ html {
 }
 
 #container {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
     background-image: url("../img/back.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +72,6 @@ section {
 }
 
 #foot {
-    width: 20vw;
-    height: 20vh;
     margin: 0 auto;
 }
+
