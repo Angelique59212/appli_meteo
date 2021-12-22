@@ -1,3 +1,4 @@
+//recup html
 let description = $("#description");
 let humidity = $("#humidity");
 let tempMin = $("#temp-min");
@@ -11,8 +12,10 @@ let nameCity = $("#nameCity");
 let temperature = $("#temperature");
 $("#container").css("height", innerHeight + "px");
 
+//recover the current time
 setInterval(()=>date.innerHTML = new Date().toLocaleTimeString(),1000);//date
 
+//response api
 valid.on("click", () => {
     let city = $("#city").val();
     let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city +
@@ -20,7 +23,7 @@ valid.on("click", () => {
     $.getJSON(url, function (response) {
         $("#nameCity").first().html(JSON.stringify(response.city));
 
-        console.log(response)
+        // image as a function of time
         switch (response.weather[0].description) {
             case "ciel dégagé" :
                 image.css( {
